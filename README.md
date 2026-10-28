@@ -10,9 +10,9 @@ results in:
 > Kellogg Institute for International Studies, Department of Political
 > Science).
 
-Repository: https://github.com/vkuskova/NeurIPS-18877. Archived releases of
-this repository are deposited on Zenodo; cite the version DOI given in the
-paper.
+Repository: https://github.com/vkuskova/NeurIPS-18877. Archived release on
+Zenodo: https://doi.org/10.5281/zenodo.23717582 (version DOI cited in the
+paper).
 
 The paper introduces PANAR-X, a regime-aware additive forecasting architecture
 with verifiable contraction conditions, and demonstrates it on V-Dem
