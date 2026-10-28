@@ -4,7 +4,15 @@ This archive contains everything needed to verify and reproduce the empirical
 results in:
 
 > **Stability-Constrained Regime-Aware Forecasting for Heterogeneous Panel
-> Time Series** - Anonymous (NeurIPS 2026 submission).
+> Time Series**. Dmitry Zaytsev, Valentina V. Kuskova, and Michael Coppedge.
+> Advances in Neural Information Processing Systems 39 (NeurIPS 2026).
+> University of Notre Dame (Lucy Family Institute for Data & Society,
+> Kellogg Institute for International Studies, Department of Political
+> Science).
+
+Repository: https://github.com/vkuskova/NeurIPS-18877. Archived releases of
+this repository are deposited on Zenodo; cite the version DOI given in the
+paper.
 
 The paper introduces PANAR-X, a regime-aware additive forecasting architecture
 with verifiable contraction conditions, and demonstrates it on V-Dem
@@ -51,8 +59,7 @@ computation, and every number the paper reports from that panel is already
 reproducible from the archived artifacts via `verify_camera_ready_numbers.py`.
 
 The paper itself is not included in this package; it is available from the
-NeurIPS 2026 proceedings. This package is archived on Zenodo; the DOI is given
-in the camera-ready paper.
+NeurIPS 2026 proceedings.
 
 ## Two paths through this package
 

@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite the paper and the archived release."
+title: "PANAR-X reproducibility package (NeurIPS 2026, submission 18877)"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/vkuskova/NeurIPS-18877"
+authors:
+  - family-names: Zaytsev
+    given-names: Dmitry
+    affiliation: University of Notre Dame
+  - family-names: Kuskova
+    given-names: Valentina V.
+    affiliation: University of Notre Dame
+  - family-names: Coppedge
+    given-names: Michael
+    affiliation: University of Notre Dame
+preferred-citation:
+  type: conference-paper
+  title: "Stability-Constrained Regime-Aware Forecasting for Heterogeneous Panel Time Series"
+  authors:
+    - family-names: Zaytsev
+      given-names: Dmitry
+    - family-names: Kuskova
+      given-names: Valentina V.
+    - family-names: Coppedge
+      given-names: Michael
+  collection-title: "Advances in Neural Information Processing Systems 39 (NeurIPS 2026)"
+  year: 2026
