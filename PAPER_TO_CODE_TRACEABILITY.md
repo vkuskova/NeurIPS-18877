@@ -96,7 +96,7 @@ for test.
 108–146). Same logic mirrored in `vdem_v1h_postanalysis.py` (lines 80–144)
 and `regime_stratified_diagnostic.py` (lines 66–113).
 
-### §6.1 Diagnostic — Table 5.3 (`tab:vdem-strat`) (paper line 498)
+### §6.1 Diagnostic - Table 5.3 (`tab:vdem-strat`) (paper line 498)
 
 **Paper location**: §6.1 body table, paper lines 498–516.
 
@@ -112,11 +112,11 @@ and `regime_stratified_diagnostic.py` (lines 66–113).
 | Stratified linear M1.5 MSE (overall) | `0.00337` | line 212 |
 | Improvement strat over pool (overall) | `+3.02%` | line 219 |
 
-**Source — primary**: `code/vdem/regime_stratified_diagnostic.py` (320
+**Source - primary**: `code/vdem/regime_stratified_diagnostic.py` (320
 lines, top-level script). Per-regime fits at lines 171–215; overall pooled
 vs stratified comparison at lines 217–280.
 
-**Source — also computed in main sweep**: `code/vdem/vdem_v1h_v3_cell.py`
+**Source - also computed in main sweep**: `code/vdem/vdem_v1h_v3_cell.py`
 lines 197–254. Saved into `vdem_v1h_frontier.pkl['baselines']`.
 
 ### Figure 1 (`fig:diagnostic-recovery`) (paper line 518)
@@ -146,9 +146,9 @@ pooled NN M1.5 across the test set (panels C/D/E).
 - Lines 19–34: load V-Dem postanalysis pickle and CSV
 - Lines 39–72: rebuild panel from CSV
 - Lines 74–77: parse coefficients into (5, 4) array (5 lags × 4 covariates)
-- Lines 98–123: panel A — heatmap
-- Lines 124–144: panel B — bar chart focused on `v2psorgs` at lag $t-4$
-- Lines 145–238: panels C/D/E — cumulative-difference per regime,
+- Lines 98–123: panel A - heatmap
+- Lines 124–144: panel B - bar chart focused on `v2psorgs` at lag $t-4$
+- Lines 145–238: panels C/D/E - cumulative-difference per regime,
   using `M2_mean` and `NN_pooled_M1.5` from the postanalysis pickle
 
 ### §6.2 Baselines (paper lines 554–571)
@@ -165,7 +165,7 @@ pooled NN M1.5 across the test set (panels C/D/E).
 **Source**: `code/vdem/vdem_v1h_v3_cell.py` lines 197–352 (baselines block).
 Saved into `vdem_v1h_frontier.pkl['baselines']` dict.
 
-### §6.3 Regime-aware sweep — Table 5.4 (`tab:vdem-regime-dm`) (paper line 582)
+### §6.3 Regime-aware sweep - Table 5.4 (`tab:vdem-regime-dm`) (paper line 582)
 
 | Regime | Paper claim | Verify line |
 |---|---|---|
@@ -178,26 +178,26 @@ Saved into `vdem_v1h_frontier.pkl['baselines']` dict.
 | Headline two-sided $p$ | `0.0159` | line 325 |
 | Hard-routing 5-seed mean MSE | `0.00344` | line 262 |
 
-**Source — sweep**: `code/vdem/vdem_v1h_v3_cell.py` lines 731–820 (sweep
+**Source - sweep**: `code/vdem/vdem_v1h_v3_cell.py` lines 731–820 (sweep
 loop). Each cell uses `train_m2_unified()` (lines 456–536) and
 `full_audit()` (lines 634–812). Hard-routing variant: `mode='hard_routing'`
 branch in `train_m2_unified` (lines 460–470).
 
-**Source — DM test**: `code/vdem/vdem_v1h_postanalysis.py
+**Source - DM test**: `code/vdem/vdem_v1h_postanalysis.py
 diebold_mariano()` (function defined at lines 476–502; headline DM call
 loop at lines 504–524). Per-regime DM at lines 551–563. Uses HAC variance
 estimation with $h=1$.
 
-**Source — verify**: re-computed end-to-end in `verify_paper_numbers.py`
+**Source - verify**: re-computed end-to-end in `verify_paper_numbers.py`
 (lines 295–326) using a self-contained `paired_dm()` function (lines
 295–303); both approaches agree to 4 decimal places on this test set.
 
 ### §6.3 Holm–Bonferroni correction prose (paper lines 587–590)
 
 Holm–Bonferroni thresholds for $m=3$ comparisons:
-- Strictest: $\alpha/3 = 0.0167$ — regime 2 ($p=0.016$) survives
-- Second: $\alpha/2 = 0.025$ — regime 0 ($p=0.028$) does not survive
-- Last: $\alpha = 0.05$ — regime 1 ($p=0.765$) does not reject
+- Strictest: $\alpha/3 = 0.0167$ - regime 2 ($p=0.016$) survives
+- Second: $\alpha/2 = 0.025$ - regime 0 ($p=0.028$) does not survive
+- Last: $\alpha = 0.05$ - regime 1 ($p=0.765$) does not reject
 
 Pure arithmetic from the per-regime $p$-values verified above. Not
 asserted independently.
@@ -251,11 +251,11 @@ All numbers come from `artifacts/synthetic_v1f_frontier.pkl`.
 | OLS $p$-value | `< 10^{-7}` | line 178 |
 
 **Source**: `code/synthetic/synthetic_v1f_sweep.py main()` (lines 449–530):
-- M1.5 baseline 5-seed mean — lines 463–471
-- M2 sweep 9 cells × 5 seeds — lines 484–515
+- M1.5 baseline 5-seed mean - lines 463–471
+- M2 sweep 9 cells × 5 seeds - lines 484–515
 - `audit_M2()` (lines 325–436) computes per-seed audit constants
 
-### Table 5.5 (`tab:synth-summary`) — Stress test contrast (paper line 716)
+### Table 5.5 (`tab:synth-summary`) - Stress test contrast (paper line 716)
 
 **Paper location**: §7 body table, paper lines 716–741.
 
@@ -273,15 +273,15 @@ is `+0.00007` (asserted at lines 313, 315).
 
 ---
 
-## Appendix A — Proofs (paper line 829)
+## Appendix A - Proofs (paper line 829)
 
 No empirical numbers; mathematical derivations only.
 
-## Appendix B — Synthetic data and full Pareto frontier (paper line 1019)
+## Appendix B - Synthetic data and full Pareto frontier (paper line 1019)
 
 ### App B.1 DGP parameters (paper line 1022)
 
-DGP details — regime occupancy, transition rate.
+DGP details - regime occupancy, transition rate.
 
 | Paper claim | Value | Verify line |
 |---|---|---|
@@ -315,11 +315,11 @@ the soft-penalty unconstrained ($\lambda_M=0$) cell.
 | Regime gap 95% t-CI | `[+0.0065, +0.0109]` | lines 110, 112 |
 
 **Source**: `code/synthetic/synthetic_v1f_sweep.py main()`:
-- `m15_test_mse` and `m1_test_mse` — baseline section, lines 463–482
-- M2 5-seed values for `('soft_only', 0.0)` cell — sweep loop, lines 485–515
+- `m15_test_mse` and `m1_test_mse` - baseline section, lines 463–482
+- M2 5-seed values for `('soft_only', 0.0)` cell - sweep loop, lines 485–515
 - 95% t-CI: computed inside `verify_paper_numbers.py` (lines 105–113)
 
-### App B.4 Table B.2 (`tab:synth-frontier-full`) — 9-cell Pareto frontier (paper line 1089)
+### App B.4 Table B.2 (`tab:synth-frontier-full`) - 9-cell Pareto frontier (paper line 1089)
 
 Body Table 5.2's content moved here in the trim.
 
@@ -335,17 +335,16 @@ Body Table 5.2's content moved here in the trim.
 | `proj_batch`, $\lambda_M=0.05$ | `0.99, 0.74, 0.20, -0.0089 [-0.0122,-0.0055], 2/5` |
 | `proj_batch`, $\lambda_M=0.10$ | `0.91, 0.47, 0.12, -0.0112 [-0.0142,-0.0083], 5/5` |
 
-**Verify lines**: 153, 155, 157, 159, 161 inside the loop over the 9 cells —
-**45 frontier-table assertions** (5 columns × 9 cells).
+**Verify lines**: 153, 155, 157, 159, 161 inside the loop over the 9 cells - **45 frontier-table assertions** (5 columns × 9 cells).
 
-**Source**: `code/synthetic/synthetic_v1f_sweep.py main()` — sweep loop
+**Source**: `code/synthetic/synthetic_v1f_sweep.py main()` - sweep loop
 over `modes × lam_Ms × SEEDS`, lines 484–515. The `train_M2()` call at
 line 500 selects the enforcement mode; the soft-Lipschitz penalty,
 projection-every-epoch, and projection-every-batch logic are inside
 `train_M2()` lines 265–324. Spectral-norm projection in
 `project_per_edge_nets()` lines 235–244.
 
-## Appendix C — V-Dem data and preprocessing (paper line 1131)
+## Appendix C - V-Dem data and preprocessing (paper line 1131)
 
 Descriptive. Regime boundaries from training-set tertile cutpoints on
 $Y_{t-1}$. Specific cutpoint values are computed at runtime by
@@ -353,7 +352,7 @@ $Y_{t-1}$. Specific cutpoint values are computed at runtime by
 `vdem_v1h_postanalysis.py` (lines 144–164) and
 `regime_stratified_diagnostic.py` (lines 122–136).
 
-## Appendix D — Audit protocol (paper line 1201)
+## Appendix D - Audit protocol (paper line 1201)
 
 ### D.1 Gradient-probe (paper line 1215)
 
@@ -392,7 +391,7 @@ Two core estimators:
   MSE for 100 epochs, runs both estimators, saves
   `artifacts/certified_audit_results.pkl`.
 
-## Appendix E — Hyperparameters (paper line 1321)
+## Appendix E - Hyperparameters (paper line 1321)
 
 Descriptive. Values match the constants and `train_*` function signatures:
 
@@ -424,22 +423,22 @@ asserts:
 
 - App B.3 baselines and gain decomposition (9 checks)
 - §7 / §6.4 audit constants for V-Dem and synthetic (10 checks)
-- App B.4 9-cell frontier — every cell × every column (45 checks)
+- App B.4 9-cell frontier - every cell × every column (45 checks)
 - §7 OLS slope claim (4 checks)
-- §7 / Table 5.5 cross-experiment table — synthetic & V-Dem columns
+- §7 / Table 5.5 cross-experiment table - synthetic & V-Dem columns
   including gaps (11 checks)
 - §6.2 V-Dem baselines (5 checks)
 - §6.2 / Tables 1, 2 panel sizing and regime occupancy (7 checks)
-- §6.1 Table 5.3 per-regime linear stratification — pooled and
+- §6.1 Table 5.3 per-regime linear stratification - pooled and
   stratified MSE in each regime (8 checks)
 - §6.4 stability conditions (5 checks)
 - §6.3 hard-routing MSE (1 check)
-- §6.3 Table 5.4 per-regime DM — DM, p-value, MSE_M2, MSE_pool in each
+- §6.3 Table 5.4 per-regime DM - DM, p-value, MSE_M2, MSE_pool in each
   regime + overall (16 checks)
 - Figure 1 cumulative-advantage final values per regime (3 checks)
 - Figure 1B per-regime party-organization coefficients (4 checks)
 - App B.1 synthetic DGP regime structure and α (5 checks)
-- App D.2 certified bound — per-regime detail and aggregate (14 checks)
+- App D.2 certified bound - per-regime detail and aggregate (14 checks)
 - Abstract / §6.1 "4 of 4 covariates show sign reversal" (1 check)
 - §6.4 / §8 raw MSE reduction and per-regime % MSE reductions (4 checks)
 
@@ -449,7 +448,7 @@ Numbers cited in the paper but not currently asserted (computable on
 demand from the four artifact pickles or with arithmetic):
 
 - Table 5.3 per-regime improvement percentages (`+0.36%`, `+4.49%`,
-  `+2.01%` — pure arithmetic from the asserted pooled and stratified
+  `+2.01%` - pure arithmetic from the asserted pooled and stratified
   per-regime MSEs)
 - Holm–Bonferroni thresholds (pure arithmetic from per-regime $p$-values
   which are asserted)
@@ -460,3 +459,32 @@ demand from the four artifact pickles or with arithmetic):
 
 To extend the verification script to cover any of these, load the
 relevant pickle and add a `check()` call. Each takes a few lines.
+
+
+---
+
+# Camera-ready additions (NeurIPS 2026 final version)
+
+Line numbers above refer to the submitted `paper/submitted/main.tex`. The
+camera-ready `paper/main.tex` reorganizes the paper (several blocks moved to
+appendices for the 10-page budget); the mapping below is by section, table and
+figure label of the camera-ready. Every row is checked by
+`verify_camera_ready_numbers.py`.
+
+| Camera-ready claim | Location | Artifact | Script |
+|---|---|---|---|
+| Table 2 rows 1-3 (M2-ens vs RW, vs stratified linear; stratified vs RW): mean d, cluster t, cluster p, bootstrap p | Table 2 (`tab:vdem-regime-dm`), Sec. 6.2 | `artifacts/rebuttal_R1/results_18877_R1_dm_tests.csv` families C2, C1, C3, scope overall | `scripts/NeurIPS_18877_camera_ready.ipynb` cell 1 |
+| Table 2 row 4 (stratified vs pooled linear, bootstrap p = 0.273) and the +3.02% gain | Table 2; Sec. 6.1; Sec. 6.4 | `artifacts/rebuttal_S2/results_S2_A3_stratification_tests.csv` | notebook cell 3 |
+| Table 2 caption: regime-2 closest case p = 0.051 / 0.202 / Holm 0.606; no per-regime test significant | Table 2 caption | `results_18877_R1_dm_tests.csv` family C1 scope regime2; `p_holm` column | cell 1 |
+| Submitted DM at three decimals (+2.411 / +2.196 / +0.299 / +2.407) | Sec. 6.2, Fig. 1 C-E | `artifacts/rebuttal_R1/results_18877_R1_table2_precision.csv` | cell 2 |
+| Table 1 per-run and ensemble values over 20 seeds; unpaired t = +6.73 / +8.67; 39 of 40; seed-fair row 5 of Table 2; stratified-NN p = 0.51 / 0.54 | Table 1, Table 2 row 5, Sec. 6.2, Appendix | `artifacts/vdem_v1h_postanalysis_20seed.pkl` (primary block, seeds 0-19) and `artifacts/kdd_s81_freshseed.pkl` (fresh block, seeds 100-119) | `verify_camera_ready_numbers.py` |
+| 24-variant grid: mechanism 24/24, low-stratum coefficient negative 24/24, significant 13/24, outer reversal 0/24, canonical 4/4 covariates straddle zero | Sec. 6.4, Appendix (sensitivity) | `artifacts/rebuttal_S2/results_S2_A1_diagnostic_grid.csv` | cell 3 |
+| Jackknife 94.5% / 1.5%; era windows (-0.024 to -0.015; +0.001 in the most recent half); leave-one-covariate-out | Sec. 6.4, Appendix | `artifacts/rebuttal_S2/results_S2_A2_stability.csv` | cell 3 |
+| M2 retrained under 4 variants: vs RW p >= 0.80, vs stratified linear Holm p >= 0.16 | Sec. 6.4 | `artifacts/rebuttal_S2/results_S2_B_m2_variants.csv`; weights in `s2_checkpoints/` | cell 4 |
+| Eight-configuration stratified-linear table (gain vs pooled; standardized party-org coefficients) | Appendix (sensitivity), `tab:vdem-sensitivity` | `artifacts/rebuttal_S2/s2_grid.csv` | `verify_camera_ready_numbers.py` |
+| RV screen: 28.2% headroom (0.0746 vs 0.1039), bootstrap p at the 1e-4 floor; Wald W = 59.9, p = 5.4e-7; 0 of 8 slopes reverse; 2,615 / 2,611 days; 523 test days; N = 4,184 | Sec. 8, Appendix (RV) | `artifacts/rv_screen_S1/results_RVS1_gate1_headroom.csv`, `results_RVS1_gate2_diagnostic.csv`, `results_RVS1_meta.json` | cell 5 |
+| Table 4 (per-seed audit), Sec. 8 ranges (L_Y 0.55-0.58, gating term 0.43-0.68, L_eq 1.07-1.25), seed-4 constants (0.984, 1.010, 0.271/0.619, rho 0.991) and corrected constants (0.996, 0.305, 0.9995) | Table 4 (`tab:rv-audit`), Sec. 8 | `artifacts/rv_f1/results_RVF1_audit_constants.csv` (Corr. = L_max + L_phi,eq * M) | cell 6 |
+| Sec. 8 predictive results: t = -3.82 (p = 0.0014), calm regime t = -4.85 (Holm 0.0012, 5/5), t = -3.57 (p = 0.0024), interaction vs pooled t = -0.06 (p = 0.95), M2 vs RW t = +8.57 (p = 1e-4); test MSEs; claim level C; hyperparameter grid and selected cell | Sec. 8, Appendix (RV), checklist Q6/Q8 | `artifacts/rv_f1/results_RVF1_dm_tests.csv`, `results_RVF1_meta.json` | cell 6 |
+| Corrected Lemma 2 bound on V-Dem: at most 0.362 across 45 runs, shift at most 0.006, all certified, rho <= 0.37 | Sec. 4, Sec. 6.3 | `artifacts/vdem_v1h_frontier.pkl` (`L_max + max_r L_phi,eq^(r) * M` per run) | `verify_camera_ready_numbers.py` |
+| Ten-cell V-Dem parity 0.00343-0.00345, seed sd 0.00003-0.00005, including hard routing | Sec. 9 | `artifacts/vdem_v1h_frontier.pkl` | `verify_camera_ready_numbers.py` |
+| Figure 1 C-E labels: MSE 7.3% / 0.5% / 6.3% below pooled; N = 252 / 621 / 637 | Fig. 1 | `artifacts/vdem_v1h_postanalysis.pkl` | `code/vdem/build_figure.py` |

@@ -1,0 +1,18 @@
+{
+  "design": "design_18877_S2_sensitivity.md (locked 2026-07-25) PART A",
+  "data_sha256": "9c61549222c65491401c4552bc3311213dabaad396c2ee8aa32ccbbee722660f",
+  "n_train": 6191,
+  "n_test": 1510,
+  "n_variants": 24,
+  "jk_seed": 20260817,
+  "n_jk": 200,
+  "rng_seed_a3": 20260815,
+  "B": 9999,
+  "canonical_psorgs_l4": {
+    "pattern": false,
+    "pooled": -0.0,
+    "R0": -0.0281,
+    "R2": 0.0239
+  },
+  "timestamp_utc": "2026-07-27T01:43:35.146496+00:00"
+}

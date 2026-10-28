@@ -1,0 +1,16 @@
+{
+  "design": "design_18877_M2_vs_strong_baselines.md (locked 2026-07-24)",
+  "tarball_url": "https://github.com/author0725/NeurIPS-18877/raw/main/panar-x-reproducibility.tar.gz",
+  "postanalysis_sha256": "018a8d24d7af18f8f3f85cdc4bed8ed54166c0e55dc9170f91df29478d762e0a",
+  "frontier_sha256": "39fbb88dc739b905e62bed39f722386a3bb9c6531b2350739b7be273a13e5b03",
+  "rng_seed": 20260724,
+  "B": 9999,
+  "alpha": 0.05,
+  "claim_level": "C",
+  "claim_note": "no Holm-significant C1 tail result",
+  "i5_included": false,
+  "nn_stratified_included": false,
+  "numpy": "2.0.2",
+  "pandas": "2.2.2",
+  "timestamp_utc": "2026-07-25T02:24:32.064551+00:00"
+}

@@ -1,0 +1,26 @@
+quantity,scope,printed,recomputed,recomputed_5dp,match,source
+pooled_lin_MSE,regime0,0.0052,0.005196042835764853,0.0052,True,postanalysis.pkl
+pooled_lin_MSE,regime1,0.00487,0.004867163275242968,0.00487,True,postanalysis.pkl
+pooled_lin_MSE,regime2,0.00143,0.001430223833545015,0.00143,True,postanalysis.pkl
+pooled_lin_MSE,overall,0.00347,0.0034721614374217218,0.00347,True,postanalysis.pkl
+strat_lin_MSE,regime0,0.00518,0.005177595908541296,0.00518,True,postanalysis.pkl
+strat_lin_MSE,regime1,0.00465,0.0046488672512553855,0.00465,True,postanalysis.pkl
+strat_lin_MSE,regime2,0.0014,0.0014015271699310934,0.0014,True,postanalysis.pkl
+strat_lin_MSE,overall,0.00337,0.0033672010193563627,0.00337,True,postanalysis.pkl
+M2_MSE,regime0,0.00515,0.005146830431485354,0.00515,True,postanalysis.pkl
+M2_MSE,regime1,0.00478,0.004783618220387602,0.00478,True,postanalysis.pkl
+M2_MSE,regime2,0.00136,0.0013635654664495636,0.00136,True,postanalysis.pkl
+M2_MSE,overall,0.0034,0.0034014697918697896,0.0034,True,postanalysis.pkl
+pooled_nn_MSE,regime0,0.00555,0.005552564960377024,0.00555,True,postanalysis.pkl
+pooled_nn_MSE,regime1,0.00481,0.004807972348252832,0.00481,True,postanalysis.pkl
+pooled_nn_MSE,regime2,0.00146,0.0014556727494512934,0.00146,True,postanalysis.pkl
+pooled_nn_MSE,overall,0.00352,0.003518053469987081,0.00352,True,postanalysis.pkl
+rw_MSE,overall,0.0034,0.0033958622422035644,0.0034,True,postanalysis.pkl
+rw_MSE,overall,,0.0033958622422035644,0.0034,,frontier.pkl baselines (cross-check)
+pooled_lin_MSE,overall,,0.0034721614374217218,0.00347,,frontier.pkl baselines (cross-check)
+strat_lin_MSE,overall,,0.0033672010193563627,0.00337,,frontier.pkl baselines (cross-check)
+pooled_nn_MSE,overall,,0.003518053469987081,0.00352,,frontier.pkl baselines (cross-check)
+DM_naive_M2_vs_pooledNN,overall,+2.41 (p=0.016),+2.41 (p=0.016),,True,postanalysis.pkl
+DM_naive_M2_vs_pooledNN,regime0,+2.20 (p=0.028),+2.20 (p=0.028),,True,postanalysis.pkl
+DM_naive_M2_vs_pooledNN,regime1,+0.30 (p=0.765),+0.30 (p=0.765),,True,postanalysis.pkl
+DM_naive_M2_vs_pooledNN,regime2,+2.41 (p=0.016),+2.41 (p=0.016),,True,postanalysis.pkl

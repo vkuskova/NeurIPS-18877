@@ -1,0 +1,37 @@
+{
+  "design": "design_RV_S1_screening.md (locked 2026-07-25)",
+  "data_path": "/content/drive/MyDrive/GNAVAR/data/rv_dataset.csv",
+  "data_sha256": "9f6065e3ac046a1a18512668fa71457dba5dc51bc1cb6e802a1441cd96a0098c",
+  "assets": [
+    ".SPX",
+    ".GDAXI",
+    ".FCHI",
+    ".FTSE",
+    ".OMXSPI",
+    ".N225",
+    ".KS11",
+    ".HSI"
+  ],
+  "T_days": 2615,
+  "usable_days": 2611,
+  "train_days": 2088,
+  "test_days": 523,
+  "regime_cuts": [
+    -5.022922127887528,
+    -4.601912251569968
+  ],
+  "rng_seed": 20260801,
+  "B": 9999,
+  "block_len": 25,
+  "p_lags": 4,
+  "ridge_rel": 1e-08,
+  "wald_W": 59.90339246757176,
+  "wald_p": 5.433549983759101e-07,
+  "sigma_cond": 109.31716674172131,
+  "gate1_pass": true,
+  "gate2_verdict": "PARTIAL PASS (heterogeneity without sign reversal \u2014 per design \u00a75, whether this justifies the full experiment is Valya's call)",
+  "reversals": [],
+  "numpy": "2.0.2",
+  "pandas": "2.2.2",
+  "timestamp_utc": "2026-07-26T02:35:39.970427+00:00"
+}

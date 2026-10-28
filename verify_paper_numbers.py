@@ -10,6 +10,10 @@ Run from the package root:
 
 Expected runtime: < 30 seconds (no training, only arithmetic).
 
+This script covers the SUBMITTED version's numbers. The numbers added or
+changed in the NeurIPS 2026 camera-ready are checked by the companion script
+verify_camera_ready_numbers.py against artifacts/rebuttal_* and artifacts/rv_*.
+
 If every check passes, the paper's numbers are reproducible from the archived
 artifacts. If a check fails, the failure message names the section and table
 of the paper where the disagreeing number appears.
@@ -211,7 +215,7 @@ check('Pooled linear M1.5 MSE', round(b['pooled_linear_M1.5'], 5), 0.00347,
       tol_abs=5e-6, location='§7.4')
 check('Stratified linear M1.5 MSE', round(b['stratified_linear_M1.5'], 5), 0.00337,
       tol_abs=5e-6, location='§7.4')
-check('Pooled NN M1.5 MSE (seed mean over 5)', round(b['pooled_NN_M1.5'], 5), 0.00352,
+check('Pooled NN M1.5 MSE (archived single seed-0 run; the submitted version mislabeled it a 5-seed mean, corrected in the camera-ready Sec. 6.2)', round(b['pooled_NN_M1.5'], 5), 0.00352,
       tol_abs=5e-6, location='§7.4')
 
 # Stratified vs pooled linear improvement
@@ -320,7 +324,7 @@ for r in [0, 1, 2]:
 
 # Overall DM
 DM_all, p_all = paired_dm(nn_pool, m2_mean, target)
-check('§7.5 headline overall DM', f'{DM_all:+.2f}', '+2.41',
+check('§7.5 submitted headline DM (seed-asymmetric per-run test; superseded by Table 2 of the camera-ready)', f'{DM_all:+.2f}', '+2.41',
       location='§7.5')
 check('§7.5 headline overall p-value', f'{p_all:.4f}', '0.0159',
       location='§7.5')
