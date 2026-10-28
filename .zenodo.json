@@ -1,0 +1,16 @@
+{
+  "title": "PANAR-X reproducibility package: Stability-Constrained Regime-Aware Forecasting for Heterogeneous Panel Time Series (NeurIPS 2026)",
+  "upload_type": "software",
+  "description": "Code, pre-registered design documents, archived run artifacts, and verification scripts for the NeurIPS 2026 paper \"Stability-Constrained Regime-Aware Forecasting for Heterogeneous Panel Time Series\" (submission 18877). Two scripts check every number in the paper against the archived artifacts without retraining: verify_paper_numbers.py (submitted-version numbers) and verify_camera_ready_numbers.py (camera-ready additions). Code is MIT licensed; the V-Dem v15 panel included under data/ is CC BY 4.0 (Varieties of Democracy Project). The realized-volatility input panel is not redistributed; see the README.",
+  "creators": [
+    {"name": "Zaytsev, Dmitry", "affiliation": "University of Notre Dame"},
+    {"name": "Kuskova, Valentina V.", "affiliation": "University of Notre Dame"},
+    {"name": "Coppedge, Michael", "affiliation": "University of Notre Dame"}
+  ],
+  "license": "MIT",
+  "keywords": ["panel time series", "regime switching", "contraction certificate", "Lipschitz stability", "neural additive models", "V-Dem", "democracy forecasting", "reproducibility"],
+  "related_identifiers": [
+    {"identifier": "https://github.com/vkuskova/NeurIPS-18877", "relation": "isSupplementTo", "resource_type": "software", "scheme": "url"}
+  ],
+  "version": "1.0.0"
+}
